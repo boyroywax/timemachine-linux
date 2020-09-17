@@ -1,7 +1,7 @@
 # Serve TimeMachine Drives from linux
 You get a really cool Xserve Drive Logo if you do this correctly.
 
-
+![Really Cool Xserve Icon](./xserve.png)
 
 ## Run Down:
 a. could not get ext4 format to work
