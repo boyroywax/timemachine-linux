@@ -4,13 +4,13 @@ You get a really cool Xserve Drive Logo if you do this correctly.
 ![Really Cool Xserve Icon](./xserve.png)
 
 ## Run Down:
-a. could not get ext4 format to work
+a. Unsuccesful: ext4 format 
 
-b. could not get samba to work
+b. Unsuccesful: samba - https://mudge.name/2019/11/12/using-a-raspberry-pi-for-time-machine/
 
-c. easiest to format drive with hfs+ on mac osx 
+c. Easiest to format drive with hfs+ on mac osx 
 
-d. began with missing partitions on hfs+ hdd (data still intact)
+d. Began with missing partitions on hfs+ hdd (data still intact).
 
 e. My device was located at '/dev/sda'.  I mounted my hfs+ hdd to '/media/hfs/2tb', you can mount elsewhere.
 
