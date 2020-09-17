@@ -1,4 +1,4 @@
-# Serve TimeMachine Drives from linux
+# Serve TimeMachine Drives from Linux
 You get a really cool Xserve Drive Logo if you do this correctly.
 
 ![Really Cool Xserve Icon](./xserve.png)
@@ -27,6 +27,28 @@ Example:
 # /etc/fstab
 UUID=fefc150b-2d57-3a85-9a41-d6b5d97de670 /media/hfs/2tb hfsplus force,rw 0 0
 ```
+
+## Fixing broken GUID partition table
+Fixing a currupted drive partition map was nothing but fun.  Eventually, I mounted the raw drive /dev/sda and was still able to view the files.
+* VCP will show you the progress of your copy. (https://github.com/alexfrederiksen/vcp)
+
+Install VCP
+```shell
+git clone https://github.com/alexfrederiksen/vcp.git
+cd vcp
+sudo  ./install.sh
+```
+
+Go to the directory you wish to copy and run:
+```shell
+vcp <destination>
+```
+
+Magic should now be working, and the drive will be backing up.
+
+## Reformat hdd on MacOSX to hfs+
+
+## Install AFP for file sharing
 
 * Ubuntu AFP setup
 https://fixpress.org/afp-ubuntu/
