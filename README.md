@@ -12,12 +12,13 @@ c. easiest to format drive with hfs+ on mac osx
 
 d. began with missing partitions on hfs+ hdd (data still intact)
 
-e. I mounted my hfs+ hdd to '/media/hfs/2tb', you  can mount elsewhere.
+e. My device was located at '/dev/sda'.  I mounted my hfs+ hdd to '/media/hfs/2tb', you can mount elsewhere.
 
 ## Mount your hfs+ hdd
+Example:
 ```shell
 sudo apt-get install hfsplus hfsutils hfsprogs
-sudo mount -t hfsplus -o force,rw /dev/sdXY /media/hfs/2tb
+sudo mount -t hfsplus -o force,rw /dev/sda1 /media/hfs/2tb
 ```
 
 ## Add the hfs+ hdd to '/etc/fstab'
