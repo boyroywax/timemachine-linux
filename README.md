@@ -28,8 +28,8 @@ Example:
 UUID=fefc150b-2d57-3a85-9a41-d6b5d97de670 /media/hfs/2tb hfsplus force,rw 0 0
 ```
 
-## Fixing broken GUID partition table
-Fixing a currupted drive partition map was nothing but fun.  Eventually, I mounted the raw drive /dev/sda and was still able to view the files.
+## Backing Up broken GUID partition table
+Fixing a currupted drive partition map was nothing but fun.  Eventually, I mounted the raw drive /dev/sda and was still able to view the files.  Since I could'nt fix it I just backed up the drive, prepating it for reformation.
 * VCP will show you the progress of your copy. (https://github.com/alexfrederiksen/vcp)
 
 Install VCP
